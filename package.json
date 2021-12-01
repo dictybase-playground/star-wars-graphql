@@ -8,6 +8,11 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@apollo/client": "3.5.x",
+    "apollo3-cache-persist": "0.13.x",
+    "graphql": "16.x",
+    "localforage": "1.10.x",
+    "lodash": "4.17.x",
     "next": "12.0.4",
     "react": "17.0.2",
     "react-dom": "17.0.2"
