@@ -1,7 +1,5 @@
-import '../styles/globals.css'
 import type { AppProps } from 'next/app'
 import { ApolloProvider } from "@apollo/client"
-import useGraphqlClient from "../lib/graphql-client"
 import useGraphqlCient from '../lib/graphql-client'
 
 function MyApp({ Component, pageProps }: AppProps) {
