@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef, RefObject } from "react"
+import { useEffect, useRef, RefObject } from "react"
 
 // https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API
 
@@ -19,7 +19,7 @@ const useIntersectionObserver = (props: UseIntersectionObserverProps): void => {
   useEffect(() => {
     if (!target.current) return
     if (observerRef.current) observerRef.current.disconnect()
-    observerRef.current = new IntersectionObserver(onIntersection,option)
+    observerRef.current = new IntersectionObserver(onIntersection, option)
     observerRef.current.observe(target.current)
     return () => {
       if (observerRef.current) {
