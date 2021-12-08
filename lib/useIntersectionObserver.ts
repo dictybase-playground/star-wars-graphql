@@ -1,14 +1,9 @@
-import { useEffect, useRef, RefObject } from "react"
+import { useEffect, useRef } from "react"
+import {AppTypes} from "../lib/types"
 
 // https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API
 
-interface UseIntersectionObserverProps {
-  target: RefObject<Element>,
-  option?: IntersectionObserverInit,
-  onIntersection: IntersectionObserverCallback
-}
-
-const useIntersectionObserver = (props: UseIntersectionObserverProps): void => {
+const useIntersectionObserver = (props: AppTypes.UseIntersectionObserverProps): void => {
   const { target, option, onIntersection } = props
   const observerRef = useRef<IntersectionObserver>()
 

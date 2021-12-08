@@ -1,9 +1,6 @@
+import { AppTypes } from "../lib/types"
 
-interface LoadingDisplayProps {
-  loading: boolean
-}
-
-export default function LoadingDisplay({ loading }: LoadingDisplayProps): JSX.Element {
+export default function LoadingDisplay({ loading }: AppTypes.LoadingDisplayProps): JSX.Element {
   let component = <></>
   if (loading) {
     component = <h2>....Loading data....</h2>
